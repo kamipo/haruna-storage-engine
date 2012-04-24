@@ -2,8 +2,6 @@ find_package(PkgConfig)
 
 pkg_check_modules(PFICOMMON REQUIRED pficommon)
 
-MESSAGE("${PFICOMMON_LIBRARIES}")
-
 INCLUDE_DIRECTORIES(${PFICOMMON_INCLUDE_DIRS})
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fimplicit-templates")
 
